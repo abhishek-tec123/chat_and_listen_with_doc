@@ -234,7 +234,7 @@ from gtts import gTTS
 import tempfile
 import wave
 import numpy as np
-import sounddevice as sd
+# import sounddevice as sd
 from pydub import AudioSegment
 
 load_dotenv()
@@ -384,8 +384,8 @@ def play_fast_audio(answer, speed_factor=1.2, lang='en'):
             audio_data = np.frombuffer(f.readframes(num_frames), dtype=np.int16)
 
         # Play the adjusted audio in real-time with sounddevice
-        sd.play(audio_data, samplerate=framerate)
-        sd.wait()  # Wait until the audio finishes playing
+        # sd.play(audio_data, samplerate=framerate)
+        # sd.wait()  # Wait until the audio finishes playing
 
     # Optionally, remove the temporary MP3 and WAV files
     import os
