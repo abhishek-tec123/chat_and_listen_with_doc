@@ -240,7 +240,7 @@ from pydub import AudioSegment
 load_dotenv()
 
 MODEL_ID = os.environ['MODEL_ID']
-PDF_DIRECTORY = "/Users/macbook/Desktop/texttoaudio_deploy/data2"  # Directory with multiple PDFs
+PDF_DIRECTORY = "./data2"  # Directory with multiple PDFs
 INDEX_PATH = "/Users/macbook/Desktop/texttoaudio/faiss_index"  # Path to save/load FAISS index
 
 # Initialize embeddings if not in session state
